@@ -1,7 +1,5 @@
 package com.Demohash;
 
-import abc.MyHashMap;
-
 public class MyHashMapMain 
 {
 	public static void main(String [] args) {
@@ -10,7 +8,9 @@ public class MyHashMapMain
 		  
 	}
 	private static void givenASentence_WhenWordAreAddedToList_ShouldReturnWordFrequency() {
-	String sentance="To be or not to be";
+	String sentance= "Paranoids are not paranoid because they are paranoid "
+			+ "but because they keep putting themselves "
+			+ "deliberately into paranoid avoidable situations";;
 	MyHashMap<String, Integer> myHashMap = new MyHashMap<>();
 	String[] words = sentance. toLowerCase().split(" ");
 		for(String word : words) {
@@ -21,7 +21,7 @@ public class MyHashMapMain
 				value = value + 1;
 			myHashMap.add(word, value);
 		}
-		int frequency = myHashMap.get("or");
+		int frequency = myHashMap.get("are");
 		System.out.println(myHashMap);
 		System.out.println("Frequency of give word be is " + frequency);
 
