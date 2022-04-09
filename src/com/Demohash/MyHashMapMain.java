@@ -24,7 +24,9 @@ public class MyHashMapMain
 		int frequency = myHashMap.get("are");
 		System.out.println(myHashMap);
 		System.out.println("Frequency of give word be is " + frequency);
-
+		myHashMap.removeKey("avoidable");
+		System.out.println("Hash Map after deleting avoidable");
+		System.out.println(myHashMap);
 	}
 	}
 	
